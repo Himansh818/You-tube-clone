@@ -14,21 +14,21 @@ const signupHandler =(e)=>{
 }
 
   return (
-    <div className="h-screen w-screen flex justify-center items-center bg-linear-to-br from-black via-gray-900 to-gray-800 text-white font-sans relative overflow-hidden">
+    <div className="h-screen w-screen flex justify-center items-center bg-linear-to-bl from-black via-blue-900 to-gray-800 text-white font-sans relative overflow-hidden">
   {/* Optional cinematic background image */}
   
 
   <form
     onSubmit={signupHandler}
     id="signupForm"
-    className="relative z-10 flex flex-col p-10 bg-gray-900/80 backdrop-blur-md rounded-3xl shadow-[0_0_25px_rgba(0,255,255,0.4)] w-[90%] sm:w-[450px] space-y-6 border border-cyan-500/30"
+    className="signUpForm relative z-10 flex flex-col p-10 bg-gray-900/80 backdrop-blur-md rounded-3xl shadow-[0_0_25px_rgba(0,255,255,0.4)] w-[90%] sm:w-[450px] space-y-6 border border-cyan-500/30"
   >
     <h1 className="text-4xl font-bold text-center text-cyan-400 drop-shadow-[0_0_5px_#00ffff]">
       🎞️ Create Account
     </h1>
 
     {/* Username Field */}
-    <div className="flex flex-col space-y-3">
+    <div className="signUpFormTextDiv flex flex-col space-y-3">
       <label htmlFor="username" className="text-lg text-gray-200">
         Username
       </label>
@@ -45,7 +45,7 @@ const signupHandler =(e)=>{
     </div>
 
     {/* Email Field */}
-    <div className="flex flex-col space-y-3">
+    <div className="signUpFormTextDiv flex flex-col space-y-3">
       <label htmlFor="email" className="text-lg text-gray-200">
         Email
       </label>
@@ -62,7 +62,7 @@ const signupHandler =(e)=>{
     </div>
 
     {/* Password Field */}
-    <div className="flex flex-col space-y-3">
+    <div className="signUpFormTextDiv flex flex-col space-y-3">
       <label htmlFor="password" className="text-lg text-gray-200">
         Password
       </label>
@@ -79,7 +79,7 @@ const signupHandler =(e)=>{
     </div>
 
     {/* Confirm Password Field */}
-    <div className="flex flex-col space-y-3">
+    <div className="signUpFormTextDiv flex flex-col space-y-3">
       <label htmlFor="confirmPassword" className="text-lg text-gray-200">
         Confirm Password
       </label>

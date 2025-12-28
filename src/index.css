@@ -1,32 +1,80 @@
 @import "tailwindcss";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  background: linear-gradient(black, blue);
+}
+
+
+.loginForm{
+  padding: 50px 20px;
+}
+.signUpForm{
+  padding: 50px 20px;
+}
+.loginFormTextDiv{
+  padding: 15px 0px;
+}
+.signUpFormTextDiv{
+  padding: 10px 0px;
+}
+.loginFormTextDiv input{
+  margin-top: 10px;
+}
+.signUpFormTextDiv input{
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .menuBtn{
+    display: block !important;
+  }
+}
+
 
 @keyframes move {
   0%{
     opacity: 0;
-    transform: scale(2) translateY(100px);
+    transform: translateY(50px);
   }
   100%{
     opacity: 1;
-    transform: scale(1) translateY(0px);
+    transform: translateY(0px);
   }
 }
 .button{
-  animation: move forwards linear 2s  ;
+  background: linear-gradient(blue,black);
+  opacity: 0;
+  animation: move forwards linear 1s  ;
+  animation-delay: 0.6s;
+  padding: 10px 15px;
 }
 
 @keyframes entry {
   0%{
     opacity: 0;
-    transform: scale(2);
+    transform: translateY(100px);
   }100%{
     opacity: 1;
-    transform: scale(1);
+    transform:  translateY(0px);
   }
 }
 .movie{
-  animation: entry linear forwards 2s ;
+  animation: entry linear forwards 1s ;
 }
-.movie1{
-  animation: entry linear forwards 2s ;
-}
+
+.card {
+    background-color: "#1a2236";
+    padding: 12px;
+    border-radius: 6px;
+    color: white;
+    transition: all ease 0.8s;
+  }
+  .card:hover{
+    transform: scale(1.1);
+  }
